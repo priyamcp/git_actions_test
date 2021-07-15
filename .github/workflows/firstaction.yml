@@ -12,3 +12,7 @@ jobs:
         run: |
           node -v
           npm -vls
+      - name: trying python commands
+        run: |
+          print("Hello from Py")
+        shell: python
