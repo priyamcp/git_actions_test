@@ -1,0 +1,14 @@
+name : Shell Cmds
+
+on : [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo some text
+        run: echo "first action"
+      - name: multiline scripts
+        run: |
+          node -v
+          npm -vls
